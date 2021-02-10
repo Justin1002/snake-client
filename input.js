@@ -33,6 +33,15 @@ const setupInput = function(conn) {
     if (key === 'd') {
       conn.write('Move: right');
     }
+
+    if (key === '1') {
+      conn.write('Say: Sucker!');
+    }
+
+    if (key === '2') {
+      conn.write('Say: GO LONG!');
+    }
+    
     
   });
 
