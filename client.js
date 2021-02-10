@@ -1,5 +1,6 @@
 const net = require('net');
 
+
 const connect = function() {
   const conn = net.createConnection({ 
     host: 'localhost',
@@ -10,7 +11,10 @@ const connect = function() {
 
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
-    conn.write('Name: JLY')
+    
+    conn.write('Name: JLY');
+
+    
   });
   
   conn.on('data', (data) => {
